@@ -1,0 +1,29 @@
+.coststable {
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    float: none;
+    color: black;
+}
+
+.costTableItem{
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+.centered {
+    text-align: center;
+}
+.costLabel{
+    color: #fe6f5e;
+    font-size: 2em;
+}
+.costHeader{
+    font-size: 2em;
+    color: #412fd8;
+}
+.costDiscount{
+    font-size: 1.4em;
+    color: #fe6f5e;
+    padding-bottom: 0.5em;
+}

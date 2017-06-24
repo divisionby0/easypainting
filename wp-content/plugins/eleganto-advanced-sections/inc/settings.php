@@ -53,6 +53,16 @@ function eleganto_advanced_sections_init_options() {
   	'panel'		 => 'homepage',
   	'priority'	 => 10,
   ) );
+		Kirki::add_section( 'clear_section', array(
+			'title'		 => __( 'Clear Section Settings', 'eleganto-advanced-sections' ),
+			'panel'		 => 'homepage',
+			'priority'	 => 10,
+		) );
+		Kirki::add_section( 'cost_section', array(
+			'title'		 => __( 'Cost Section Settings', 'eleganto-advanced-sections' ),
+			'panel'		 => 'homepage',
+			'priority'	 => 10,
+		) );
   
   /**
    * Homepage Layout
@@ -97,6 +107,8 @@ function eleganto_advanced_sections_init_options() {
   		'testimonial_section'	 => esc_attr__( 'Testimonial', 'eleganto-advanced-sections' ),
   		'contact_section'		 => esc_attr__( 'Contact', 'eleganto-advanced-sections' ),
   		'image_section'			 => esc_attr__( 'Image', 'eleganto-advanced-sections' ),
+		'clear_section'			 => esc_attr__( 'Clear', 'eleganto-advanced-sections' ),
+		'cost_section'			 => esc_attr__( 'Cost', 'eleganto-advanced-sections' ),
   	),
   ) );
   Kirki::add_field( 'eleganto_settings', array(
@@ -185,6 +197,18 @@ function eleganto_advanced_sections_init_options() {
   		'intro-img'	 => '',
   		'intro-on'	 => 0,
   	),
+	  'clear'			 => array(
+		  'color'		 => '#ffd800',
+		  'menu'		 => 'Clear',
+		  'intro-img'	 => '',
+		  'intro-on'	 => 0,
+	  ),
+	  'cost'			 => array(
+		  'color'		 => '#ffd800',
+		  'menu'		 => 'Cost',
+		  'intro-img'	 => '',
+		  'intro-on'	 => 0,
+	  ),
   );
   
   foreach ( $sections as $keys => $values ) {

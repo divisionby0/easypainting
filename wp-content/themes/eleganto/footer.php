@@ -10,11 +10,6 @@
 					?>                 
 				</div>
 			<?php endif; ?>
-			<p class="text-center">
-				<a href="http://themes4wp.com/theme/eleganto" title="Free Business WordPress Theme">Eleganto</a>
-				<span class="sep"> | </span>
-				<a href="http://wp-templates.ru/" title="Шаблоны WordPress">WordPress</a> <span class="sep"> | </span> <a href="https://rastenievod.com/" title="Комнатные цветы и растения, садовые цветы и их названия" target="_blank">Rastenievod.com</a>
-			</p> 
 		</div>
 	</div>       
 </footer> 

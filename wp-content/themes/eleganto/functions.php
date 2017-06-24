@@ -73,6 +73,7 @@ function eleganto_theme_stylesheets() {
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.7.0', 'all' );
 	wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/css/flexslider.css', array(), '2.6.0', 'all' );
 	wp_enqueue_style( 'eleganto-portfolio-css', get_template_directory_uri() . '/css/portfolio.css', array(), '1', 'all' );
+	wp_enqueue_style( 'div0', get_template_directory_uri() . '/css/div0.css');
 }
 
 add_action( 'wp_enqueue_scripts', 'eleganto_theme_stylesheets' );
