@@ -13,10 +13,12 @@
 						<h1 class="entry-title page-header">
 							<?php the_title(); ?>
 						</h1>                              
-						<?php 
+						<?php
+						/*
 						if ( ! is_singular( 'portfolio' ) ) {
 							get_template_part( 'template-part', 'postmeta' ); 
 						}
+						*/
 						?>                            
 					</header>                                                                                      
 					<div class="entry-content">
@@ -25,19 +27,21 @@
 					<div id="custom-box"></div>                         
 					<?php wp_link_pages(); ?>                                                        
 					<?php get_template_part( 'template-part', 'posttags' ); ?>
+
 					<?php if ( get_theme_mod( 'post-nav-check', 1 ) == 1 ) : ?>                            
 						<div class="post-navigation row">
 							<div class="post-previous col-md-6"><?php previous_post_link( '%link', '<span class="meta-nav">' . __( 'Previous:', 'eleganto' ) . '</span> %title' ); ?></div>
 							<div class="post-next col-md-6"><?php next_post_link( '%link', '<span class="meta-nav">' . __( 'Next:', 'eleganto' ) . '</span> %title' ); ?></div>
 						</div>                          
-					<?php endif; ?>                            
+					<?php endif; ?>
+
 					<?php if ( get_theme_mod( 'related-posts-check', 1 ) == 1 ) : ?>
 						<?php get_template_part( 'template-part', 'related' ); ?>
 					<?php endif; ?>
 					<?php if ( get_theme_mod( 'author-check', 1 ) == 1 ) : ?>                               
-						<?php get_template_part( 'template-part', 'postauthor' ); ?> 
+						<?php //get_template_part( 'template-part', 'postauthor' ); ?>
 					<?php endif; ?>                            
-					<?php comments_template(); ?>                         
+					<?php //comments_template(); ?>
 				</div>        
 			<?php endwhile; ?>        
 		<?php else: ?>            

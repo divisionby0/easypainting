@@ -38,7 +38,7 @@
 				<?php endif; ?>
 				<?php if ( get_theme_mod( 'conatact_company_name', '' ) != '' || get_theme_mod( 'conatact_company_address', '' ) != '' ) : ?> 
 					<address>
-						<i class="fa fa-map-marker"></i><strong><?php esc_html_e( ' Our Address', 'eleganto' ); ?></strong><br>
+						<i class="fa fa-map-marker"></i><strong><?php esc_html_e( ' Наш адрес', 'eleganto' ); ?></strong><br>
 						<strong><?php echo get_theme_mod( 'conatact_company_name', '' ); ?></strong><br>
 						<span id="map-input">
 							<?php echo wp_kses_post( get_theme_mod( 'conatact_company_address', '' ) ); ?>
@@ -47,7 +47,7 @@
 				<?php endif; ?>
 				<?php if ( get_theme_mod( 'conatact_company_telephone', '' ) != '' ) : ?>
 					<address>
-						<i class="fa fa-phone-square"></i><strong><?php _e( ' Phone', 'eleganto' ); ?></strong><br>
+						<i class="fa fa-phone-square"></i><strong><?php _e( ' Телефоны', 'eleganto' ); ?></strong><br>
 						<?php echo esc_html( get_theme_mod( 'conatact_company_telephone', '' ) ); ?>
 					</address> 
 				<?php endif; ?>
@@ -58,6 +58,7 @@
 						<a href="mailto:#"><?php echo antispambot( $mail ); ?></a>
 					</address>
 				<?php endif; ?> 
+				<div><img src="http://easypainting.ru/wp-content/uploads/2017/06/map-1.jpg"></div>
 			</div>
 		</div>
 		<!--/row-->

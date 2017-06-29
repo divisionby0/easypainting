@@ -12,7 +12,7 @@
 						<?php the_title(); ?>
 					</a>                            
 				</h2> 
-				<?php get_template_part( 'template-part', 'postmeta' ); ?>
+				<?php //get_template_part( 'template-part', 'postmeta' ); ?>
 			</header>                                                      
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
@@ -20,8 +20,9 @@
 			<div class="clear"></div>                                  
 			<p class="text-center">                                      
 				<a class="btn btn-default btn-md" href="<?php the_permalink(); ?>">
-					<?php esc_html_e( 'Read more', 'eleganto' ); ?> 
-				</a>                                  
+					<!--<?php esc_html_e( 'Read more', 'eleganto' ); ?>-->
+					<?php esc_html_e( 'Записаться на занятие', 'eleganto' ); ?>
+				</a>
 			</p>                            
 		</div>                      
 	</div>
